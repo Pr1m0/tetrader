@@ -1,0 +1,38 @@
+<h1>Tertraéder</h1>
+<p>Tetraéder térfogatszámítás!</p>
+
+<div class="tetraform">
+    <div class="form-group">
+        <label for="area"
+        class="form-label">Terület</label>
+        <input type="text"
+        class="form-control"
+        id="area" placeholder="terület (cm2)"
+        required
+        [(ngModel)]="area">
+    </div>
+    <div class="form-group">
+        <label for="height"
+        class="form-label">>Magasság</label>
+        <input type="text"
+        class="form-control"
+        id="height" placeholder="magasság (cm)"
+        required
+        [(ngModel)]="height">
+    </div>
+    <div>
+<button
+(click)="startCalc()"
+class="bnt btn-primary my-3"
+id="calcButton">Számít</button>
+    </div>
+    <div class="input-group">
+    <span class="input-goup text">Térfogat</span>
+    <input type="text"
+    class="form-controll"
+    id="volume" readonly
+    [(ngModel)]="volume">
+    <span class="input-goup text">Cm3</span>
+    </div>    
+    
+</div>
